@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BananaLocation } from '../bananalocation';
 
 @Component({
   selector: 'app-banana-location',
@@ -13,5 +14,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './banana-location.component.css'
 })
 export class BananaLocationComponent {
-
+  @Input() bananaLocation!: BananaLocation;
 }
