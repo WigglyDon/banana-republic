@@ -28,11 +28,11 @@ export class BananaComponent {
   bananaBunch: BananaBunch = {
     id: 9999,
     name: 'Test Nana',
-    city: 'Test City',
-    state: 'ST',
+    flavor: 'banana flavor',
+    color: 'yellow',
     photo: `../../assets/banana-logo.svg`,
-    availableUnits: 99,
-    wifi: true,
-    laundry: false,
+    bunchSize: 99,
+    edible: false,
+    geneticallyAltered: false,
   };
 }

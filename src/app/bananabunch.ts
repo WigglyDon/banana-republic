@@ -1,10 +1,10 @@
 export interface BananaBunch {
   id: number;
   name: string;
-  city: string;
-  state: string;
+  flavor: string;
+  color: string;
   photo: string;
-  availableUnits: number;
-  wifi: boolean;
-  laundry: boolean;
+  bunchSize: number;
+  edible: boolean;
+  geneticallyAltered: boolean;
 }

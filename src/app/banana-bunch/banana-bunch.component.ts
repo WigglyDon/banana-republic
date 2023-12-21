@@ -10,7 +10,7 @@ import { BananaBunch } from '../bananabunch';
   <section class="listing">
     <img class="listing-photo" [src]="bananaBunch.photo" alt="Exterior photo of {{bananaBunch.photo}}">
     <h2 class="listing-heading">{{bananaBunch.name}}</h2>
-    <p class="banana-bunch">{{bananaBunch.city}}, {{bananaBunch.state}}</p>
+    <p class="banana-bunch">{{bananaBunch.color}}, {{bananaBunch.flavor}}</p>
   </section>
   `,
   styleUrl: './banana-bunch.component.css'
