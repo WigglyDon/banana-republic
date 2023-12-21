@@ -1,4 +1,4 @@
-export interface BananaLocation {
+export interface BananaBunch {
   id: number;
   name: string;
   city: string;

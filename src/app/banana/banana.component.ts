@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BananaLocationComponent } from '../banana-location/banana-location.component';
-import { BananaLocation } from '../bananalocation';
+import { BananaBunchComponent } from '../banana-bunch/banana-bunch.component';
+import { BananaBunch } from '../bananabunch';
 
 @Component({
   selector: 'app-banana',
   standalone: true,
   imports: [
     CommonModule,
-    BananaLocationComponent,
+    BananaBunchComponent,
   ],
   template: `
     <section>
@@ -19,20 +19,18 @@ import { BananaLocation } from '../bananalocation';
     </section>
 
     <section class="results">
-      <app-banana-location [bananaLocation]="bananaLocation"></app-banana-location>
+      <app-banana-bunch [bananaBunch]="bananaBunch"></app-banana-bunch>
     </section>
   `,
   styleUrl: './banana.component.css'
 })
 export class BananaComponent {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
-
-  bananaLocation: BananaLocation = {
+  bananaBunch: BananaBunch = {
     id: 9999,
     name: 'Test Nana',
     city: 'Test City',
     state: 'ST',
-    photo: `${this.baseUrl}/example-house.jpg`,
+    photo: `../../assets/banana-logo.svg`,
     availableUnits: 99,
     wifi: true,
     laundry: false,
