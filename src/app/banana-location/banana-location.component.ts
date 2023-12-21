@@ -7,9 +7,11 @@ import { BananaLocation } from '../bananalocation';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <p>
-      banana-location lols!
-    </p>
+  <section class="listing">
+    <img class="listing-photo" [src]="bananaLocation.photo" alt="Exterior photo of {{bananaLocation.photo}}">
+    <h2 class="listing-heading">{{bananaLocation.name}}</h2>
+    <p class="banana-location">{{bananaLocation.city}}, {{bananaLocation.state}}</p>
+  </section>
   `,
   styleUrl: './banana-location.component.css'
 })
