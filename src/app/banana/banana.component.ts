@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BananaBunchComponent } from '../banana-bunch/banana-bunch.component';
 import { BananaBunch } from '../bananabunch';
-import { mockData } from './bananaData';
 import { BananaService } from '../banana.service';
 
 @Component({
