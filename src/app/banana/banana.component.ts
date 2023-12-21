@@ -19,7 +19,7 @@ import { BananaLocation } from '../bananalocation';
     </section>
 
     <section class="results">
-      <app-banana-location></app-banana-location>
+      <app-banana-location [bananaLocation]="bananaLocation"></app-banana-location>
     </section>
   `,
   styleUrl: './banana.component.css'
