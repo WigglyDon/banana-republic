@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <p>
-      banana-location works!
+      banana-location lols!
     </p>
   `,
   styleUrl: './banana-location.component.css'

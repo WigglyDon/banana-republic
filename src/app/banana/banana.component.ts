@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BananaLocationComponent } from '../banana-location/banana-location.component';
+import { BananaLocation } from '../bananalocation';
 
 @Component({
   selector: 'app-banana',
@@ -24,5 +25,16 @@ import { BananaLocationComponent } from '../banana-location/banana-location.comp
   styleUrl: './banana.component.css'
 })
 export class BananaComponent {
+  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
+  bananaLocation: BananaLocation = {
+    id: 9999,
+    name: 'Test Nana',
+    city: 'Test City',
+    state: 'ST',
+    photo: `${this.baseUrl}/example-house.jpg`,
+    availableUnits: 99,
+    wifi: true,
+    laundry: false,
+  };
 }
