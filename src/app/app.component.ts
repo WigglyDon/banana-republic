@@ -21,5 +21,5 @@ import { BananaComponent } from './banana/banana.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'bananas';
+  title = 'Banana Republic';
 }
