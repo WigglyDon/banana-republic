@@ -8,11 +8,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterOutlet],
   template: `
-  <section class="listing">
+  <section class="listing" [routerLink]="['/details', bananaBunch.id]">
     <img class="listing-photo" [src]="bananaBunch.photo" alt="Exterior photo of {{bananaBunch.photo}}">
     <h2 class="listing-heading">{{bananaBunch.name}}</h2>
     <p class="banana-bunch">{{bananaBunch.color}}, {{bananaBunch.flavor}}</p>
-    <a [routerLink]="['/details', bananaBunch.id]">Learn More!</a>
+    <a>Learn More!</a>
   </section>
   `,
   styleUrl: './banana-bunch.component.css'

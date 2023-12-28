@@ -3,6 +3,7 @@
   border-radius: 30px;
   padding-bottom: 30px;
   width: 150px;
+  cursor: pointer;
 }
 .listing-heading {
   color: var(--primary-color);
