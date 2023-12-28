@@ -16,5 +16,9 @@ export class BananaService {
     return this.bananaData.find(bananaBunch => bananaBunch.id === id);
   }
 
+  submitInfo(firstName: string, lastName: string, email: string) {
+    console.log(`Info received! firstName: ${firstName}, lastName: ${lastName}, email: ${email}`);
+  }
+
   constructor() { }
 }
