@@ -14,14 +14,13 @@ import { BananaService } from '../banana.service';
   template: `
     <section>
       <form>
-        <input type="text" placeholder="Filter by banana">
-        <button class="primary" type="button">Search</button>
+        <input type="text" placeholder="Filter by banana" #filter (input)="filterResults(filter.value)">
       </form>
     </section>
 
     <section class="results">
       <app-banana-bunch
-      *ngFor="let bananaBunch of bananaBunchList"
+      *ngFor="let bananaBunch of filteredBananaBunchList"
       [bananaBunch]="bananaBunch">
       </app-banana-bunch>
     </section>
@@ -31,8 +30,22 @@ import { BananaService } from '../banana.service';
 export class BananaComponent {
   bananaBunchList: BananaBunch[] = [];
   bananaService: BananaService = inject(BananaService);
+  filteredBananaBunchList: BananaBunch[] = [];
 
   constructor() {
     this.bananaBunchList = this.bananaService.getAllBananaBunches();
+    this.filteredBananaBunchList = this.bananaBunchList;
   }
+
+  filterResults(text: string) {
+      if (!text) {
+        this.filteredBananaBunchList = this.bananaBunchList;
+        return;
+      }
+
+      this.filteredBananaBunchList = this.bananaBunchList.filter(
+        bananaBunch => bananaBunch?.name.toLowerCase().includes(text.toLowerCase())
+      );
+    }
+
 }
