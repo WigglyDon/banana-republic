@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
 import { BananaBunch } from './bananabunch';
-import { mockData } from './banana/bananaData';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BananaService {
-  bananaData = mockData;
 
-  getAllBananaBunches(): BananaBunch[] {
-    return this.bananaData
+  url = 'http://localhost:3000/bananas';
+
+  async getAllBananaBunches(): Promise<BananaBunch[]> {
+    const data = await fetch(this.url);
+    return await data.json() ?? [];
   }
 
-  getBananaBunchById(id: number): BananaBunch | undefined {
-    return this.bananaData.find(bananaBunch => bananaBunch.id === id);
+  async getBananaBunchById(id: number): Promise<BananaBunch | undefined> {
+    const data = await fetch(`${this.url}/${id}`);
+    return await data.json() ?? {};
   }
 
   submitInfo(firstName: string, lastName: string, email: string) {

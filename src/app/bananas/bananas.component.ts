@@ -25,16 +25,19 @@ import { BananaService } from '../banana.service';
       </app-banana-bunch>
     </section>
   `,
-  styleUrl: './banana.component.css'
+  styleUrl: './bananas.component.css'
 })
-export class BananaComponent {
+export class BananasComponent {
   bananaBunchList: BananaBunch[] = [];
   bananaService: BananaService = inject(BananaService);
   filteredBananaBunchList: BananaBunch[] = [];
 
   constructor() {
-    this.bananaBunchList = this.bananaService.getAllBananaBunches();
-    this.filteredBananaBunchList = this.bananaBunchList;
+
+    this.bananaService.getAllBananaBunches().then((bananaBunchResults: BananaBunch[]) => {
+      this.bananaBunchList = bananaBunchResults;
+      this.filteredBananaBunchList = bananaBunchResults;
+    });
   }
 
   filterResults(text: string) {

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { BananaComponent } from './banana/banana.component';
+import { BananasComponent } from './bananas/bananas.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    BananaComponent,
+    BananasComponent,
     RouterModule,
   ],
   template: `

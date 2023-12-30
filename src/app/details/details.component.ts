@@ -56,7 +56,9 @@ export class DetailsComponent {
 
   constructor() {
     const bananaBunchId = Number(this.route.snapshot.params['id']);
-    this.bananaBunch = this.bananaService.getBananaBunchById(bananaBunchId);
+    this.bananaService.getBananaBunchById(bananaBunchId).then((bananaBunchResult) => {
+      this.bananaBunch = bananaBunchResult;
+    });
   }
 
   submitInfo() {

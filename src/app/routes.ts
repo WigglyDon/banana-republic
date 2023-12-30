@@ -1,17 +1,17 @@
 import { Routes } from "@angular/router";
-import { BananaComponent } from "./banana/banana.component";
+import { BananasComponent } from "./bananas/bananas.component";
 import { DetailsComponent } from "./details/details.component";
 
 const routeConfig: Routes = [
   {
     path: '',
-    component: BananaComponent,
-    title: 'Home page',
+    component: BananasComponent,
+    title: 'Banana Republic',
   },
   {
     path: 'details/:id',
     component: DetailsComponent,
-    title: 'Home details',
+    title: 'Banana Details',
   }
 ];
 
