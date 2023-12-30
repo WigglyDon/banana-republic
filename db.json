@@ -32,16 +32,6 @@
     },
     {
       "id": 3,
-      "name": "Banana Ichiban",
-      "flavor": "very weird",
-      "color": "brown-ish?",
-      "photo": "../../assets/banana-logo.svg",
-      "bunchSize": 1,
-      "edible": true,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 4,
       "name": "Jalapeno Banana",
       "flavor": "Spicy",
       "color": "Green",
@@ -51,7 +41,7 @@
       "geneticallyAltered": true
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Super Banana",
       "flavor": "Delicious!",
       "color": "Yellow",
@@ -61,7 +51,7 @@
       "geneticallyAltered": true
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Strawberry Banana",
       "flavor": "Strawberry",
       "color": "Pink",
@@ -71,7 +61,7 @@
       "geneticallyAltered": true
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Space Banana",
       "flavor": "???",
       "color": "Black",
@@ -81,7 +71,7 @@
       "geneticallyAltered": true
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Banana Phone",
       "flavor": "none",
       "color": "metallic",
