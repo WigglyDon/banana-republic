@@ -15,7 +15,7 @@
       "name": "Brown Banana",
       "flavor": "yucky",
       "color": "brown",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/brown_banana.svg",
       "bunchSize": 1,
       "edible": false,
       "geneticallyAltered": false
@@ -25,7 +25,7 @@
       "name": "Spicy Banana",
       "flavor": "Spicy",
       "color": "red",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/spicy_banana.svg",
       "bunchSize": 3,
       "edible": true,
       "geneticallyAltered": true
@@ -35,7 +35,7 @@
       "name": "Jalapeno Banana",
       "flavor": "Spicy",
       "color": "Green",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/jalapeno_banana.svg",
       "bunchSize": 4,
       "edible": true,
       "geneticallyAltered": true
@@ -45,7 +45,7 @@
       "name": "Super Banana",
       "flavor": "Delicious!",
       "color": "Yellow",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/super_banana.svg",
       "bunchSize": 10,
       "edible": true,
       "geneticallyAltered": true
@@ -55,7 +55,7 @@
       "name": "Strawberry Banana",
       "flavor": "Strawberry",
       "color": "Pink",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/strawberry_banana.svg",
       "bunchSize": 1,
       "edible": true,
       "geneticallyAltered": true
@@ -65,7 +65,7 @@
       "name": "Space Banana",
       "flavor": "???",
       "color": "Black",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/space_banana.svg",
       "bunchSize": 0,
       "edible": false,
       "geneticallyAltered": true
@@ -75,7 +75,7 @@
       "name": "Banana Phone",
       "flavor": "none",
       "color": "metallic",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/banana_phone.svg",
       "bunchSize": 1,
       "edible": false,
       "geneticallyAltered": false
@@ -85,7 +85,7 @@
       "name": "Flying Banana",
       "flavor": "windy",
       "color": "blue + white",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/flying_banana.svg",
       "bunchSize": 10,
       "edible": false,
       "geneticallyAltered": true
@@ -95,7 +95,7 @@
       "name": "Grape Banana",
       "flavor": "Grape",
       "color": "purple",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/grape_banana.svg",
       "bunchSize": 25,
       "edible": true,
       "geneticallyAltered": true
@@ -105,7 +105,7 @@
       "name": "Dirty Banana",
       "flavor": "SUPER gross...",
       "color": "Dark Brown",
-      "photo": "../../assets/banana-logo.svg",
+      "photo": "../../assets/dirty_banana.svg",
       "bunchSize": 2,
       "edible": false,
       "geneticallyAltered": false
