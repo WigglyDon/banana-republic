@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BananaBunch } from './bananabunch';
+import { BananaBunch } from './banana-bunch/banana-bunch.types';
 
 @Injectable({
   providedIn: 'root'

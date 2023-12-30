@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { BananaService } from '../banana.service';
-import { BananaBunch } from '../bananabunch';
+import { BananaBunch } from '../banana-bunch/banana-bunch.types';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({

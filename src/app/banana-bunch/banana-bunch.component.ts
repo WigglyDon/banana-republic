@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BananaBunch } from '../bananabunch';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { BananaBunch } from './banana-bunch.types';
 
 @Component({
   selector: 'app-banana-bunch',
