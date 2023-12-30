@@ -8,7 +8,7 @@ body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 :root {
-  --primary-color: yellow;
+  --primary-color: rgba(255, 255, 0, 0.562);
   --secondary-color: rgb(181, 181, 17);
   --accent-color: #e8e7fa;
   --shadow-color: #E8E8E8;
