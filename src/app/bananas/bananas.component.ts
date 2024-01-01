@@ -14,7 +14,7 @@ import { BananaService } from '../banana.service';
   template: `
     <section>
       <form class="search-bar">
-        <input type="text" placeholder="Filter by Name, Color, Flavor..." #filter (input)="filterResults(filter.value)">
+        <input type="text" placeholder="Search..." #filter (input)="filterResults(filter.value)">
       </form>
     </section>
 
