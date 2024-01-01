@@ -13,8 +13,9 @@ import { RouterModule } from '@angular/router';
   <main>
     <a [routerLink]="['/']">
       <header class="brand-name">
-        <img class="brand-logo" src="/assets/banana-logo.svg" alt="logo" aria-hidden="true">
-        <h2>BANANA REPUBLIC</h2>
+        <img class="brand-logo" src="/assets/banana-logo.svg" alt="missing-logo" aria-hidden="true">
+        <h1>BANANA REPUBLIC</h1>
+        <img class="brand-logo" src="/assets/banana-logo.svg" alt="missing-logo" aria-hidden="true">
       </header>
     </a>
     <section class="content">

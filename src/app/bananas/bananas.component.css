@@ -1,3 +1,8 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
 .results{
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +14,11 @@
 }
 
 input[type="text"] {
+  display: flex;
   border: solid 1px var(--primary-color);
   padding: 10px;
   border-radius: 8px;
   margin-right: 4px;
-  display: inline-block;
   width: 30%;
 }
 
@@ -23,19 +28,4 @@ button {
   background: var(--primary-color);
   color: brown;
   border-radius: 8px;
-}
-
-@media (min-width: 500px) and (max-width: 768px) {
-.results {
-  grid-template-columns: repeat(2, 1fr);
-  }
-  input[type="text"] {
-    width: 70%;
-  }
-}
-
-@media (max-width: 499px) {
-.results {
-  grid-template-columns: 1fr;
-  }
 }

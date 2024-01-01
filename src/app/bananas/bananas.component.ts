@@ -13,8 +13,8 @@ import { BananaService } from '../banana.service';
   ],
   template: `
     <section>
-      <form>
-        <input type="text" placeholder="Filter by banana" #filter (input)="filterResults(filter.value)">
+      <form class="search-bar">
+        <input type="text" placeholder="Filter by Name, Color, Flavor..." #filter (input)="filterResults(filter.value)">
       </form>
     </section>
 
