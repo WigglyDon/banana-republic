@@ -1,15 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BananaBunchComponent } from '../banana-bunch/banana-bunch.component';
-import { BananaBunch } from '../banana-bunch/banana-bunch.types';
+import { BananaComponent } from '../banana/banana.component';
+import { Banana } from '../banana/banana.types';
 import { BananaService } from '../banana.service';
 
 @Component({
-  selector: 'app-banana',
+  selector: 'app-bananas',
   standalone: true,
   imports: [
     CommonModule,
-    BananaBunchComponent,
+    BananaComponent,
   ],
   template: `
     <section>
@@ -19,35 +19,34 @@ import { BananaService } from '../banana.service';
     </section>
 
     <section class="results">
-      <app-banana-bunch
-      *ngFor="let bananaBunch of filteredBananaBunchList"
-      [bananaBunch]="bananaBunch">
-      </app-banana-bunch>
+      <app-banana
+      *ngFor="let banana of filteredBananaList"
+      [banana]="banana">
+      </app-banana>
     </section>
   `,
   styleUrl: './bananas.component.css'
 })
 export class BananasComponent {
-  bananaBunchList: BananaBunch[] = [];
+  bananaList: Banana[] = [];
   bananaService: BananaService = inject(BananaService);
-  filteredBananaBunchList: BananaBunch[] = [];
+  filteredBananaList: Banana[] = [];
 
   constructor() {
-
-    this.bananaService.getAllBananaBunches().then((bananaBunchResults: BananaBunch[]) => {
-      this.bananaBunchList = bananaBunchResults;
-      this.filteredBananaBunchList = bananaBunchResults;
+    this.bananaService.getAllBananas().then((bananaResults: Banana[]) => {
+      this.bananaList = bananaResults;
+      this.filteredBananaList = bananaResults;
     });
   }
 
   filterResults(text: string) {
       if (!text) {
-        this.filteredBananaBunchList = this.bananaBunchList;
+        this.filteredBananaList = this.bananaList;
         return;
       }
 
-      this.filteredBananaBunchList = this.bananaBunchList.filter(
-        bananaBunch => bananaBunch?.name.toLowerCase().includes(text.toLowerCase())
+      this.filteredBananaList = this.bananaList.filter(
+        banana => banana?.name.toLowerCase().includes(text.toLowerCase())
       );
     }
 

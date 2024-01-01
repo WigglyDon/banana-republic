@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { BananaService } from '../banana.service';
-import { BananaBunch } from '../banana-bunch/banana-bunch.types';
+import { Banana } from '../banana/banana.types';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -11,17 +11,17 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   imports: [CommonModule, ReactiveFormsModule],
   template: `
   <article>
-    <img class="banana-photo" [src]="bananaBunch?.photo" alt="missing picture"/>
+    <img class="banana-photo" [src]="banana?.photo" alt="missing picture"/>
     <section class="banana-description">
-      <h2 class="banana-heading">{{bananaBunch?.name}}</h2>
-      <p class="banana-flavor">{{bananaBunch?.flavor}}, {{bananaBunch?.color}}</p>
+      <h2 class="banana-heading">{{banana?.name}}</h2>
+      <p class="banana-flavor">{{banana?.flavor}}, {{banana?.color}}</p>
     </section>
     <section class="banana-features">
       <h2 class="section-heading">About this banana</h2>
       <ul>
-        <li>Bunch Size: {{bananaBunch?.bunchSize}}</li>
-        <li>Is this genetically altered: {{bananaBunch?.geneticallyAltered}}</li>
-        <li>Is this banana edible: {{bananaBunch?.edible}}</li>
+        <li>Bunch Size: {{banana?.bunchSize}}</li>
+        <li>Is this genetically altered: {{banana?.geneticallyAltered}}</li>
+        <li>Is this banana edible: {{banana?.edible}}</li>
       </ul>
     </section>
 
@@ -47,7 +47,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   bananaService = inject(BananaService);
-  bananaBunch: BananaBunch | undefined;
+  banana: Banana | undefined;
   infoForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
@@ -55,9 +55,9 @@ export class DetailsComponent {
   });
 
   constructor() {
-    const bananaBunchId = Number(this.route.snapshot.params['id']);
-    this.bananaService.getBananaBunchById(bananaBunchId).then((bananaBunchResult) => {
-      this.bananaBunch = bananaBunchResult;
+    const bananaId = Number(this.route.snapshot.params['id']);
+    this.bananaService.getBananaById(bananaId).then((bananaResult) => {
+      this.banana = bananaResult;
     });
   }
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BananaBunch } from './banana-bunch/banana-bunch.types';
+import { Banana } from './banana/banana.types';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +8,12 @@ export class BananaService {
 
   url = 'http://localhost:3000/bananas';
 
-  async getAllBananaBunches(): Promise<BananaBunch[]> {
+  async getAllBananas(): Promise<Banana[]> {
     const data = await fetch(this.url);
     return await data.json() ?? [];
   }
 
-  async getBananaBunchById(id: number): Promise<BananaBunch | undefined> {
+  async getBananaById(id: number): Promise<Banana | undefined> {
     const data = await fetch(`${this.url}/${id}`);
     return await data.json() ?? {};
   }

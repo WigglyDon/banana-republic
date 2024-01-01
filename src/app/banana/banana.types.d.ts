@@ -1,4 +1,4 @@
-export interface BananaBunch {
+export interface Banana {
   id: number;
   name: string;
   flavor: string;
