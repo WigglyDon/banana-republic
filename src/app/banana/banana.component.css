@@ -1,13 +1,3 @@
-.banana {
-  display: flex;
-  flex-direction: column;
-  background: var(--accent-color);
-  border-radius: 30px;
-  padding-bottom: 15px;
-  width: 150px;
-  height: 250px;
-  cursor: pointer;
-}
 .banana-photo {
   height: 100px;
   width: 100%;

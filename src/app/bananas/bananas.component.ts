@@ -19,7 +19,7 @@ import { BananaService } from '../banana.service';
     </section>
 
     <section class="results">
-      <app-banana
+      <app-banana class="banana"
       *ngFor="let banana of filteredBananaList"
       [banana]="banana">
       </app-banana>
@@ -45,11 +45,13 @@ export class BananasComponent {
         return;
       }
 
+      const searchCriteria = text.toLowerCase();
+
       this.filteredBananaList = this.bananaList.filter(
         banana =>
-        banana?.name.toLowerCase().includes(text.toLowerCase()) ||
-        banana?.color.toLowerCase().includes(text.toLowerCase()) ||
-        banana?.flavor.toLowerCase().includes(text.toLowerCase())
+        banana?.name.toLowerCase().includes(searchCriteria) ||
+        banana?.color.toLowerCase().includes(searchCriteria) ||
+        banana?.flavor.toLowerCase().includes(searchCriteria)
       );
     }
 

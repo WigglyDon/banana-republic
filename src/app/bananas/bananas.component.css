@@ -15,15 +15,22 @@ input[type="text"] {
   border: 2px solid darkgray;
 }
 
-
 .results{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  column-gap: 14px;
+  justify-content: space-between;
   row-gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-  margin-top: 50px;
+}
+
+.banana {
+  display: flex;
+  flex-direction: column;
+  background: var(--accent-color);
+  border-radius: 30px;
+  padding-bottom: 15px;
+  flex: 1 0 calc(33.333% - 28px);
+  cursor: pointer;
+  height: auto;
 }
 
 button {
