@@ -46,7 +46,10 @@ export class BananasComponent {
       }
 
       this.filteredBananaList = this.bananaList.filter(
-        banana => banana?.name.toLowerCase().includes(text.toLowerCase())
+        banana =>
+        banana?.name.toLowerCase().includes(text.toLowerCase()) ||
+        banana?.color.toLowerCase().includes(text.toLowerCase()) ||
+        banana?.flavor.toLowerCase().includes(text.toLowerCase())
       );
     }
 
