@@ -32,11 +32,3 @@ input[type="text"] {
   cursor: pointer;
   height: auto;
 }
-
-button {
-  padding: 10px;
-  border: solid 1px var(--primary-color);
-  background: var(--primary-color);
-  color: brown;
-  border-radius: 8px;
-}
