@@ -18,8 +18,15 @@ export class BananaService {
     return await data.json() ?? {};
   }
 
-  submitInfo(firstName: string, lastName: string, email: string) {
-    console.log(`Info received! firstName: ${firstName}, lastName: ${lastName}, email: ${email}`);
+  submitInfo(name: string, flavor: string, color: string, bunchSize: number, edible: boolean, geneticallyAltered: boolean) {
+    console.log(`
+    name: ${name}\n
+    flavor: ${flavor}\n
+    color: ${color}\n
+    bunch size: ${bunchSize}\n
+    edible?: ${edible}\n
+    genetically altered?: ${geneticallyAltered}
+    `);
   }
 
   constructor() { }

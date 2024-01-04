@@ -25,18 +25,33 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
       </ul>
     </section>
 
+    <!--  -->
+    <div>--------------------------------------</div>
+    <!--  -->
+
     <section class="banana-info">
-      <h2 class="section-heading">Input new nana info</h2>
-      <form [formGroup]="infoForm" (submit)="submitInfo()">
-        <label for="first-name">First Name</label>
-        <input id="first-name" type="text" formControlName="firstName">
+      <h2 class="section-heading">Edit Banana</h2>
+      <form *ngIf="infoForm" [formGroup]="infoForm" (submit)="submitInfo()">
 
-        <label for="last-name">Last Name</label>
-        <input id="last-name" type="text" formControlName="lastName">
+        <label for="name">Name</label>
+        <input id="name" type="text" formControlName="name">
 
-        <label for="email">Email</label>
-        <input id="email" type="email" formControlName="email">
-        <button type="submit" class="primary">Apply now</button>
+        <label for="flavor">Flavor</label>
+        <input id="flavor" type="text" formControlName="flavor">
+
+        <label for="color">Color</label>
+        <input id="color" type="text" formControlName="color">
+
+        <label for="bunchSize">Bunch Size</label>
+        <input id="bunchSize" type="text" formControlName="bunchSize">
+
+        <label for="edible">Edible?</label>
+        <input id="edible" type="text" formControlName="edible">
+
+        <label for="geneticallyAltered">Genetically Altered?</label>
+        <input id="geneticallyAltered" type="text" formControlName="geneticallyAltered">
+
+        <button type="submit" class="primary">Submit</button>
       </form>
     </section>
   </article>
@@ -48,24 +63,48 @@ export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   bananaService = inject(BananaService);
   banana: Banana | undefined;
-  infoForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-  });
+  infoForm!: FormGroup;
 
   constructor() {
+    this.initForm();
     const bananaId = Number(this.route.snapshot.params['id']);
     this.bananaService.getBananaById(bananaId).then((bananaResult) => {
       this.banana = bananaResult;
+      this.setFormValues();
     });
+  }
+
+  initForm() {
+    this.infoForm = new FormGroup({
+      name: new FormControl(''),
+      flavor: new FormControl(''),
+      color: new FormControl(''),
+      bunchSize: new FormControl(''),
+      edible: new FormControl(''),
+      geneticallyAltered: new FormControl(''),
+    });
+  }
+
+  setFormValues() {
+    this.infoForm.patchValue({
+      name: this.banana?.name,
+      flavor: this.banana?.flavor,
+      color: this.banana?.color,
+      bunchSize: this.banana?.bunchSize,
+      edible: this.banana?.edible,
+      geneticallyAltered: this.banana?.geneticallyAltered,
+
+    })
   }
 
   submitInfo() {
     this.bananaService.submitInfo(
-      this.infoForm.value.firstName ?? '',
-      this.infoForm.value.lastName ?? '',
-      this.infoForm.value.email ?? '',
+      this.infoForm?.value.name ?? '',
+      this.infoForm?.value.flavor ?? '',
+      this.infoForm?.value.color ?? '',
+      this.infoForm?.value.bunchSize ?? '',
+      this.infoForm?.value.edible ?? '',
+      this.infoForm?.value.geneticallyAltered ?? '',
     );
   }
 }
