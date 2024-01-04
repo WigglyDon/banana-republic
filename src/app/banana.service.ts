@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Banana } from './banana/banana.types';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BananaService {
-
-  url = 'http://localhost:3000/bananas';
+  baseUrl = 'http://localhost:3000/bananas';
 
   async getAllBananas(): Promise<Banana[]> {
-    const data = await fetch(this.url);
+    const data = await fetch(this.baseUrl);
     return await data.json() ?? [];
   }
 
   async getBananaById(id: number): Promise<Banana | undefined> {
-    const data = await fetch(`${this.url}/${id}`);
+    const data = await fetch(`${this.baseUrl}/${id}`);
     return await data.json() ?? {};
   }
 
