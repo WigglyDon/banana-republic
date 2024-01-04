@@ -1,34 +1,40 @@
 import { Injectable } from '@angular/core';
 import { Banana } from './banana/banana.types';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BananaService {
+
+  constructor(private http: HttpClient) {
+    console.log("bingbong");
+  }
+
   baseUrl = 'http://localhost:3000/bananas';
 
-  async getAllBananas(): Promise<Banana[]> {
-    const data = await fetch(this.baseUrl);
-    return await data.json() ?? [];
-  }
+  // getAllBananas(): Observable<Banana[]> {
+  //   return this.http.get<Banana[]>(`${this.baseUrl}`);
+  // }
 
-  async getBananaById(id: number): Promise<Banana | undefined> {
-    const data = await fetch(`${this.baseUrl}/${id}`);
-    return await data.json() ?? {};
-  }
+  // getBananaById(id:number): Observable<Banana> {
+  //   return this.http.get<Banana>(`${this.baseUrl}/${id}}`);
+  // }
 
-  submitInfo(name: string, flavor: string, color: string, bunchSize: number, edible: boolean, geneticallyAltered: boolean) {
-    console.log(`
-    name: ${name}\n
-    flavor: ${flavor}\n
-    color: ${color}\n
-    bunch size: ${bunchSize}\n
-    edible?: ${edible}\n
-    genetically altered?: ${geneticallyAltered}
-    `);
-  }
+  // updateBanana(banana: Banana): Observable<Banana> {
+  //   return this.http.put<Banana>(`${this.baseUrl}/${banana.id}`, banana);
+  // }
 
-  constructor() { }
+
+  // submitInfo(name: string, flavor: string, color: string, bunchSize: number, edible: boolean, geneticallyAltered: boolean) {
+  //   console.log(`
+  //   name: ${name}\n
+  //   flavor: ${flavor}\n
+  //   color: ${color}\n
+  //   bunch size: ${bunchSize}\n
+  //   edible?: ${edible}\n
+  //   genetically altered?: ${geneticallyAltered}
+  //   `);
+  // }
 }
