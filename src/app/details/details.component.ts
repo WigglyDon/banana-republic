@@ -13,17 +13,17 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [BananaService],
   template: `
   <article>
-    <img class="banana-photo" [src]="banana.photo" alt="missing picture"/>
+    <img class="banana-photo" [src]="banana?.photo" alt="missing picture"/>
     <section class="banana-description">
-      <h2 class="banana-heading">{{banana.name}}</h2>
-      <p class="banana-flavor">{{banana.flavor}}, {{banana.color}}</p>
+      <h2 class="banana-heading">{{banana?.name}}</h2>
+      <p class="banana-flavor">{{banana?.flavor}}, {{banana?.color}}</p>
     </section>
     <section class="banana-features">
       <h2 class="section-heading">About this banana</h2>
       <ul>
-        <li>Bunch Size: {{banana.bunchSize}}</li>
-        <li>Is this genetically altered: {{banana.geneticallyAltered}}</li>
-        <li>Is this banana edible: {{banana.edible}}</li>
+        <li>Bunch Size: {{banana?.bunchSize}}</li>
+        <li>Is this genetically altered: {{banana?.geneticallyAltered}}</li>
+        <li>Is this banana edible: {{banana?.edible}}</li>
       </ul>
     </section>
 
@@ -33,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
 
     <section class="banana-info">
       <h2 class="section-heading">Edit Banana</h2>
-      <form *ngIf="infoForm" [formGroup]="infoForm" (submit)="submitInfo()">
+      <form *ngIf="infoForm" [formGroup]="infoForm" (submit)="updateBanana()">
 
         <label for="name">Name</label>
         <input id="name" type="text" formControlName="name">
@@ -64,7 +64,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   bananaService = inject(BananaService);
-  banana!: Banana;
+  banana?: Banana;
   infoForm!: FormGroup;
 
   constructor() {
@@ -101,18 +101,10 @@ export class DetailsComponent {
     })
   }
 
-  submitInfo() {
-    this.bananaService.submitInfo(
-      this.infoForm?.value.name ?? '',
-      this.infoForm?.value.flavor ?? '',
-      this.infoForm?.value.color ?? '',
-      this.infoForm?.value.bunchSize ?? '',
-      this.infoForm?.value.edible ?? '',
-      this.infoForm?.value.geneticallyAltered ?? '',
-    );
-
-    // this is just updating with the original banana not the form values
-    console.log(this.banana)
-    this.bananaService.updateBanana(this.banana)
+  updateBanana() {
+    console.log(this.banana?.id, this.infoForm.value)
+    this.bananaService.updateBanana(this.banana!.id, this.infoForm.value).subscribe(result => {
+      console.log(`updateBanana: !!!`);
+    })
   }
 }

@@ -20,19 +20,8 @@ export class BananaService {
     return this.http.get<Banana>(`${this.baseUrl}/${id}`);
   }
 
-  updateBanana(banana: Banana): Observable<Banana> {
-    return this.http.put<Banana>(`${this.baseUrl}/${banana.id}`, banana);
+  updateBanana(id: number, newInfo: Banana): Observable<Banana> {
+    return this.http.put<Banana>(`${this.baseUrl}/${id}`, newInfo);
   }
 
-
-  submitInfo(name: string, flavor: string, color: string, bunchSize: number, edible: boolean, geneticallyAltered: boolean) {
-    console.log(`
-    name: ${name}\n
-    flavor: ${flavor}\n
-    color: ${color}\n
-    bunch size: ${bunchSize}\n
-    edible?: ${edible}\n
-    genetically altered?: ${geneticallyAltered}
-    `);
-  }
 }
