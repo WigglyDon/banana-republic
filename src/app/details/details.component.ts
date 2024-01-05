@@ -13,17 +13,17 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [BananaService],
   template: `
   <article>
-    <img class="banana-photo" [src]="banana?.photo" alt="missing picture"/>
+    <img class="banana-photo" [src]="banana.photo" alt="missing picture"/>
     <section class="banana-description">
-      <h2 class="banana-heading">{{banana?.name}}</h2>
-      <p class="banana-flavor">{{banana?.flavor}}, {{banana?.color}}</p>
+      <h2 class="banana-heading">{{banana.name}}</h2>
+      <p class="banana-flavor">{{banana.flavor}}, {{banana.color}}</p>
     </section>
     <section class="banana-features">
       <h2 class="section-heading">About this banana</h2>
       <ul>
-        <li>Bunch Size: {{banana?.bunchSize}}</li>
-        <li>Is this genetically altered: {{banana?.geneticallyAltered}}</li>
-        <li>Is this banana edible: {{banana?.edible}}</li>
+        <li>Bunch Size: {{banana.bunchSize}}</li>
+        <li>Is this genetically altered: {{banana.geneticallyAltered}}</li>
+        <li>Is this banana edible: {{banana.edible}}</li>
       </ul>
     </section>
 
