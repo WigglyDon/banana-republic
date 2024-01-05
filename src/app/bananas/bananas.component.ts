@@ -13,8 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
     BananaComponent,
     HttpClientModule
   ],
+  providers: [BananaService],
   template: `
-    <!-- <section>
+    <section>
       <form class="search-bar">
         <input type="text" placeholder="Search..." #filter (input)="filterResults(filter.value)">
       </form>
@@ -25,36 +26,35 @@ import { HttpClientModule } from '@angular/common/http';
       *ngFor="let banana of filteredBananaList"
       [banana]="banana">
       </app-banana>
-    </section> -->
+    </section>
   `,
   styleUrl: './bananas.component.css'
 })
 export class BananasComponent {
-  // bananaList: Banana[] = [];
-  // filteredBananaList: Banana[] = [];
+  bananaList: Banana[] = [];
+  filteredBananaList: Banana[] = [];
 
   constructor(private bananaService: BananaService) {
-    console.log("tingtong")
-    // this.bananaService.getAllBananas().subscribe(results => {
-    //   this.bananaList = results;
-    //   this.filteredBananaList = results;
-    // })
+    this.bananaService.getAllBananas().subscribe(results => {
+      this.bananaList = results;
+      this.filteredBananaList = results;
+    })
   }
 
-  // filterResults(text: string) {
-  //     if (!text) {
-  //       this.filteredBananaList = this.bananaList;
-  //       return;
-  //     }
+  filterResults(text: string) {
+      if (!text) {
+        this.filteredBananaList = this.bananaList;
+        return;
+      }
 
-  //     const searchCriteria = text.toLowerCase();
+      const searchCriteria = text.toLowerCase();
 
-  //     this.filteredBananaList = this.bananaList.filter(
-  //       banana =>
-  //       banana?.name.toLowerCase().includes(searchCriteria) ||
-  //       banana?.color.toLowerCase().includes(searchCriteria) ||
-  //       banana?.flavor.toLowerCase().includes(searchCriteria)
-  //     );
-  //   }
+      this.filteredBananaList = this.bananaList.filter(
+        banana =>
+        banana?.name.toLowerCase().includes(searchCriteria) ||
+        banana?.color.toLowerCase().includes(searchCriteria) ||
+        banana?.flavor.toLowerCase().includes(searchCriteria)
+      );
+    }
 
 }

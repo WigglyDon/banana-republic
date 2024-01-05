@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 import { BananasComponent } from "./bananas/bananas.component";
-// import { DetailsComponent } from "./details/details.component";
+import { DetailsComponent } from "./details/details.component";
 
 const routeConfig: Routes = [
   {
@@ -8,11 +8,11 @@ const routeConfig: Routes = [
     component: BananasComponent,
     title: 'Banana Republic',
   },
-  // {
-  //   path: 'details/:id',
-  //   component: DetailsComponent,
-  //   title: 'Banana Details',
-  // }
+  {
+    path: 'details/:id',
+    component: DetailsComponent,
+    title: 'Banana Details',
+  }
 ];
 
 
