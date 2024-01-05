@@ -16,20 +16,15 @@ import { HttpClientModule } from '@angular/common/http';
     <img class="banana-photo" [src]="banana?.photo" alt="missing picture"/>
     <section class="banana-description">
       <h2 class="banana-heading">{{banana?.name}}</h2>
-      <p class="banana-flavor">{{banana?.flavor}}, {{banana?.color}}</p>
+      <p class="banana-flavor">Banana Flavor: {{banana?.flavor}}</p>
+      <p class="banana-color">Banana Color: {{banana?.color}}</p>
     </section>
-    <section class="banana-features">
-      <h2 class="section-heading">About this banana</h2>
-      <ul>
+    <section class="banana-details">
+      <h2 class="details-heading">Details</h2>
         <li>Bunch Size: {{banana?.bunchSize}}</li>
         <li>Is this genetically altered: {{banana?.geneticallyAltered}}</li>
         <li>Is this banana edible: {{banana?.edible}}</li>
-      </ul>
     </section>
-
-    <!--  -->
-    <div>--------------------------------------</div>
-    <!--  -->
 
     <section class="banana-info">
       <h2 class="section-heading">Edit Banana</h2>

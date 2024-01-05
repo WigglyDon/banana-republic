@@ -2,8 +2,8 @@
   "bananas": [
     {
       "id": 0,
-      "name": "Banana",
-      "flavor": "Normal",
+      "name": "Detailz",
+      "flavor": "Pogisoft",
       "color": "Yellow",
       "photo": "../../assets/banana-logo.svg",
       "bunchSize": 5,
@@ -62,7 +62,7 @@
     },
     {
       "id": 6,
-      "name": "Space Banana",
+      "name": "????????",
       "flavor": "Exotic",
       "color": "Black",
       "photo": "../../assets/space_banana.svg",
@@ -522,9 +522,9 @@
     },
     {
       "id": 52,
-      "name": "Flying Banana",
+      "name": "LOLNANA",
       "flavor": "Exotic",
-      "color": "Yellow",
+      "color": "Looks like a dick",
       "photo": "../../assets/flying_banana.svg",
       "bunchSize": 10,
       "edible": false,
