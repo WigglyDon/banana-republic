@@ -21,7 +21,7 @@ export class BananaService {
   }
 
   updateBanana(id: number, newInfo: Banana): Observable<Banana> {
-    return this.http.put<Banana>(`${this.baseUrl}/${id}`, newInfo);
+    return this.http.patch<Banana>(`${this.baseUrl}/${id}`, newInfo);
   }
 
 }

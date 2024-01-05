@@ -11,13 +11,14 @@
       "geneticallyAltered": false
     },
     {
-      "name": "Brown Banana",
-      "flavor": "Ycukk",
-      "color": "test",
-      "bunchSize": 999,
+      "id": 1,
+      "name": "Tropical Banana",
+      "flavor": "Spicy",
+      "color": "Green",
+      "photo": "../../assets/brown_banana.svg",
+      "bunchSize": "91238",
       "edible": false,
-      "geneticallyAltered": false,
-      "id": 1
+      "geneticallyAltered": false
     },
     {
       "id": 2,

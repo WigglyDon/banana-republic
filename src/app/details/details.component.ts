@@ -97,14 +97,13 @@ export class DetailsComponent {
       bunchSize: this.banana?.bunchSize,
       edible: this.banana?.edible,
       geneticallyAltered: this.banana?.geneticallyAltered,
-
     })
   }
 
   updateBanana() {
-    console.log(this.banana?.id, this.infoForm.value)
-    this.bananaService.updateBanana(this.banana!.id, this.infoForm.value).subscribe(result => {
-      console.log(`updateBanana: !!!`);
-    })
+    this.bananaService.updateBanana(this.banana!.id, this.infoForm.value).subscribe(updatedBanana => {
+      this.banana = updatedBanana;
+      this.setFormValues();
+    });
   }
 }
