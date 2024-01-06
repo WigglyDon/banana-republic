@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     </section>
 
     <section class="results">
-      <app-banana class="banana"
+      <app-banana class="banana-result"
       *ngFor="let banana of filteredBananaList"
       [banana]="banana">
       </app-banana>

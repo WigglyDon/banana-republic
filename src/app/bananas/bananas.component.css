@@ -22,12 +22,11 @@ input[type="text"] {
   row-gap: 14px;
 }
 
-.banana {
+.banana-result {
   display: flex;
   flex-direction: column;
   background: var(--accent-color);
   border-radius: 30px;
-  padding-bottom: 15px;
   flex: 1 0 calc(33.333% - 28px);
   cursor: pointer;
   height: auto;

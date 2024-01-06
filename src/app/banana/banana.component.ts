@@ -8,7 +8,7 @@ import { Banana } from './banana.types';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterOutlet],
   template: `
-  <section class="banana" [routerLink]="['/details', banana.id]">
+  <section class="banana-card" [routerLink]="['/details', banana.id]">
     <img class="banana-photo" [src]="banana.photo" alt="Exterior photo of {{banana.photo}}">
     <h2 class="banana-heading">{{banana.name}}</h2>
     <div class="banana-info">Flavor: {{banana.flavor}}</div>
