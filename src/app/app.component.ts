@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BananasComponent } from './bananas/bananas.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -27,4 +28,12 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'Banana Republic';
+
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scrollTo(0, 0);
+    })
+  }
 }
