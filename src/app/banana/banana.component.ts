@@ -9,11 +9,11 @@ import { Banana } from './banana.types';
   imports: [CommonModule, RouterLink, RouterOutlet],
   template: `
   <section class="banana" [routerLink]="['/details', banana.id]">
-    <img class="banana-photo" [src]="banana.photo" [attr.loading]="'lazy'" alt="Exterior photo of {{banana.photo}}">
+    <img class="banana-photo" [src]="banana.photo" alt="Exterior photo of {{banana.photo}}">
     <h2 class="banana-heading">{{banana.name}}</h2>
     <div class="banana-info">Flavor: {{banana.flavor}}</div>
     <div class="banana-info">Color: {{banana.color}}</div>
-    <a>Learn More!</a>
+    <div class="learn-more">Learn More!</div>
   </section>
   `,
   styleUrl: './banana.component.css'
