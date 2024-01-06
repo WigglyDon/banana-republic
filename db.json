@@ -1,554 +1,554 @@
 {
-  "bananas": [
-    {
-      "id": 0,
-      "name": "Detailz",
-      "flavor": "Pogisoft",
-      "color": "Yellow",
-      "photo": "../../assets/banana-logo.svg",
-      "bunchSize": 5,
-      "edible": true,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 1,
-      "name": "Tropical Banana",
-      "flavor": "Spicy",
-      "color": "Green",
-      "photo": "../../assets/brown_banana.svg",
-      "bunchSize": "91238",
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 2,
-      "name": "Spicy Banana",
-      "flavor": "Spicy",
-      "color": "Red",
-      "photo": "../../assets/spicy_banana.svg",
-      "bunchSize": 3,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 3,
-      "name": "Jalapeno Banana",
-      "flavor": "Spicy",
-      "color": "Green",
-      "photo": "../../assets/jalapeno_banana.svg",
-      "bunchSize": 4,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 4,
-      "name": "Super Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/super_banana.svg",
-      "bunchSize": 10,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 5,
-      "name": "Strawberry Banana",
-      "flavor": "Fruity",
-      "color": "Red",
-      "photo": "../../assets/strawberry_banana.svg",
-      "bunchSize": 1,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 6,
-      "name": "????????",
-      "flavor": "Exotic",
-      "color": "Black",
-      "photo": "../../assets/space_banana.svg",
-      "bunchSize": 0,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 7,
-      "name": "Banana Phone",
-      "flavor": "Yucky",
-      "color": "Yellow",
-      "photo": "../../assets/banana_phone.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 8,
-      "name": "Flying Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/flying_banana.svg",
-      "bunchSize": 10,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 9,
-      "name": "Grape Banana",
-      "flavor": "Fruity",
-      "color": "Purple",
-      "photo": "../../assets/grape_banana.svg",
-      "bunchSize": 25,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 10,
-      "name": "Dirty Banana",
-      "flavor": "Yucky",
-      "color": " Brown",
-      "photo": "../../assets/dirty_banana.svg",
-      "bunchSize": 2,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 11,
-      "name": "Banana",
-      "flavor": "Normal",
-      "color": "Yellow",
-      "photo": "../../assets/banana-logo.svg",
-      "bunchSize": 5,
-      "edible": true,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 12,
-      "name": "Brown Banana",
-      "flavor": "Yucky",
-      "color": "Brown",
-      "photo": "../../assets/brown_banana.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 13,
-      "name": "Spicy Banana",
-      "flavor": "Spicy",
-      "color": "Red",
-      "photo": "../../assets/spicy_banana.svg",
-      "bunchSize": 3,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 14,
-      "name": "Jalapeno Banana",
-      "flavor": "Spicy",
-      "color": "Green",
-      "photo": "../../assets/jalapeno_banana.svg",
-      "bunchSize": 4,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 15,
-      "name": "Super Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/super_banana.svg",
-      "bunchSize": 10,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 16,
-      "name": "Strawberry Banana",
-      "flavor": "Fruity",
-      "color": "Red",
-      "photo": "../../assets/strawberry_banana.svg",
-      "bunchSize": 1,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 17,
-      "name": "Space Banana",
-      "flavor": "Exotic",
-      "color": "Black",
-      "photo": "../../assets/space_banana.svg",
-      "bunchSize": 0,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 18,
-      "name": "Banana Phone",
-      "flavor": "Yucky",
-      "color": "Yellow",
-      "photo": "../../assets/banana_phone.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 19,
-      "name": "Flying Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/flying_banana.svg",
-      "bunchSize": 10,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 20,
-      "name": "Grape Banana",
-      "flavor": "Fruity",
-      "color": "Purple",
-      "photo": "../../assets/grape_banana.svg",
-      "bunchSize": 25,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 21,
-      "name": "Dirty Banana",
-      "flavor": "Yucky",
-      "color": " Brown",
-      "photo": "../../assets/dirty_banana.svg",
-      "bunchSize": 2,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 22,
-      "name": "Banana",
-      "flavor": "Normal",
-      "color": "Yellow",
-      "photo": "../../assets/banana-logo.svg",
-      "bunchSize": 5,
-      "edible": true,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 23,
-      "name": "Brown Banana",
-      "flavor": "Yucky",
-      "color": "Brown",
-      "photo": "../../assets/brown_banana.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 24,
-      "name": "Spicy Banana",
-      "flavor": "Spicy",
-      "color": "Red",
-      "photo": "../../assets/spicy_banana.svg",
-      "bunchSize": 3,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 25,
-      "name": "Jalapeno Banana",
-      "flavor": "Spicy",
-      "color": "Green",
-      "photo": "../../assets/jalapeno_banana.svg",
-      "bunchSize": 4,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 26,
-      "name": "Super Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/super_banana.svg",
-      "bunchSize": 10,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 27,
-      "name": "Strawberry Banana",
-      "flavor": "Fruity",
-      "color": "Red",
-      "photo": "../../assets/strawberry_banana.svg",
-      "bunchSize": 1,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 28,
-      "name": "Space Banana",
-      "flavor": "Exotic",
-      "color": "Black",
-      "photo": "../../assets/space_banana.svg",
-      "bunchSize": 0,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 29,
-      "name": "Banana Phone",
-      "flavor": "Yucky",
-      "color": "Yellow",
-      "photo": "../../assets/banana_phone.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 30,
-      "name": "Flying Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/flying_banana.svg",
-      "bunchSize": 10,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 31,
-      "name": "Grape Banana",
-      "flavor": "Fruity",
-      "color": "Purple",
-      "photo": "../../assets/grape_banana.svg",
-      "bunchSize": 25,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 32,
-      "name": "Dirty Banana",
-      "flavor": "Yucky",
-      "color": " Brown",
-      "photo": "../../assets/dirty_banana.svg",
-      "bunchSize": 2,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 33,
-      "name": "Banana",
-      "flavor": "Normal",
-      "color": "Yellow",
-      "photo": "../../assets/banana-logo.svg",
-      "bunchSize": 5,
-      "edible": true,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 34,
-      "name": "Brown Banana",
-      "flavor": "Yucky",
-      "color": "Brown",
-      "photo": "../../assets/brown_banana.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 35,
-      "name": "Spicy Banana",
-      "flavor": "Spicy",
-      "color": "Red",
-      "photo": "../../assets/spicy_banana.svg",
-      "bunchSize": 3,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 36,
-      "name": "Jalapeno Banana",
-      "flavor": "Spicy",
-      "color": "Green",
-      "photo": "../../assets/jalapeno_banana.svg",
-      "bunchSize": 4,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 37,
-      "name": "Super Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/super_banana.svg",
-      "bunchSize": 10,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 38,
-      "name": "Strawberry Banana",
-      "flavor": "Fruity",
-      "color": "Red",
-      "photo": "../../assets/strawberry_banana.svg",
-      "bunchSize": 1,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 39,
-      "name": "Space Banana",
-      "flavor": "Exotic",
-      "color": "Black",
-      "photo": "../../assets/space_banana.svg",
-      "bunchSize": 0,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 40,
-      "name": "Banana Phone",
-      "flavor": "Yucky",
-      "color": "Yellow",
-      "photo": "../../assets/banana_phone.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 41,
-      "name": "Flying Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/flying_banana.svg",
-      "bunchSize": 10,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 42,
-      "name": "Grape Banana",
-      "flavor": "Fruity",
-      "color": "Purple",
-      "photo": "../../assets/grape_banana.svg",
-      "bunchSize": 25,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 43,
-      "name": "Dirty Banana",
-      "flavor": "Yucky",
-      "color": " Brown",
-      "photo": "../../assets/dirty_banana.svg",
-      "bunchSize": 2,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 44,
-      "name": "Banana",
-      "flavor": "Normal",
-      "color": "Yellow",
-      "photo": "../../assets/banana-logo.svg",
-      "bunchSize": 5,
-      "edible": true,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 45,
-      "name": "Brown Banana",
-      "flavor": "Yucky",
-      "color": "Brown",
-      "photo": "../../assets/brown_banana.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 46,
-      "name": "Spicy Banana",
-      "flavor": "Spicy",
-      "color": "Red",
-      "photo": "../../assets/spicy_banana.svg",
-      "bunchSize": 3,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 47,
-      "name": "Jalapeno Banana",
-      "flavor": "Spicy",
-      "color": "Green",
-      "photo": "../../assets/jalapeno_banana.svg",
-      "bunchSize": 4,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 48,
-      "name": "Super Banana",
-      "flavor": "Exotic",
-      "color": "Yellow",
-      "photo": "../../assets/super_banana.svg",
-      "bunchSize": 10,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 49,
-      "name": "Strawberry Banana",
-      "flavor": "Fruity",
-      "color": "Red",
-      "photo": "../../assets/strawberry_banana.svg",
-      "bunchSize": 1,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 50,
-      "name": "Space Banana",
-      "flavor": "Exotic",
-      "color": "Black",
-      "photo": "../../assets/space_banana.svg",
-      "bunchSize": 0,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 51,
-      "name": "Banana Phone",
-      "flavor": "Yucky",
-      "color": "Yellow",
-      "photo": "../../assets/banana_phone.svg",
-      "bunchSize": 1,
-      "edible": false,
-      "geneticallyAltered": false
-    },
-    {
-      "id": 52,
-      "name": "LOLNANA",
-      "flavor": "Exotic",
-      "color": "Looks like a dick",
-      "photo": "../../assets/flying_banana.svg",
-      "bunchSize": 10,
-      "edible": false,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 53,
-      "name": "Grape Banana",
-      "flavor": "Fruity",
-      "color": "Purple",
-      "photo": "../../assets/grape_banana.svg",
-      "bunchSize": 25,
-      "edible": true,
-      "geneticallyAltered": true
-    },
-    {
-      "id": 54,
-      "name": "Dirty Banana",
-      "flavor": "Yucky",
-      "color": " Brown",
-      "photo": "../../assets/dirty_banana.svg",
-      "bunchSize": 2,
-      "edible": false,
-      "geneticallyAltered": false
-    }
-  ]
+    "bananas": [
+        {
+            "id": 0,
+            "name": "Banana",
+            "flavor": "Normal",
+            "color": "Yellow",
+            "photo": "../../assets/banana-logo.svg",
+            "bunchSize": 5,
+            "edible": true,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 1,
+            "name": "Brown Banana",
+            "flavor": "Yucky",
+            "color": "Brown",
+            "photo": "../../assets/brown_banana.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 2,
+            "name": "Spicy Banana",
+            "flavor": "Spicy",
+            "color": "Red",
+            "photo": "../../assets/spicy_banana.svg",
+            "bunchSize": 3,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 3,
+            "name": "Jalapeno Banana",
+            "flavor": "Spicy",
+            "color": "Green",
+            "photo": "../../assets/jalapeno_banana.svg",
+            "bunchSize": 4,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 4,
+            "name": "Super Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/super_banana.svg",
+            "bunchSize": 10,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 5,
+            "name": "Strawberry Banana",
+            "flavor": "Fruity",
+            "color": "Red",
+            "photo": "../../assets/strawberry_banana.svg",
+            "bunchSize": 1,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 6,
+            "name": "Space Banana",
+            "flavor": "Exotic",
+            "color": "Black",
+            "photo": "../../assets/space_banana.svg",
+            "bunchSize": 0,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 7,
+            "name": "Banana Phone",
+            "flavor": "Yucky",
+            "color": "Yellow",
+            "photo": "../../assets/banana_phone.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 8,
+            "name": "Flying Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/flying_banana.svg",
+            "bunchSize": 10,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 9,
+            "name": "Grape Banana",
+            "flavor": "Fruity",
+            "color": "Purple",
+            "photo": "../../assets/grape_banana.svg",
+            "bunchSize": 25,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 10,
+            "name": "Dirty Banana",
+            "flavor": "Yucky",
+            "color": " Brown",
+            "photo": "../../assets/dirty_banana.svg",
+            "bunchSize": 2,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 11,
+            "name": "Banana",
+            "flavor": "Normal",
+            "color": "Yellow",
+            "photo": "../../assets/banana-logo.svg",
+            "bunchSize": 5,
+            "edible": true,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 12,
+            "name": "Brown Banana",
+            "flavor": "Yucky",
+            "color": "Brown",
+            "photo": "../../assets/brown_banana.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 13,
+            "name": "Spicy Banana",
+            "flavor": "Spicy",
+            "color": "Red",
+            "photo": "../../assets/spicy_banana.svg",
+            "bunchSize": 3,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 14,
+            "name": "Jalapeno Banana",
+            "flavor": "Spicy",
+            "color": "Green",
+            "photo": "../../assets/jalapeno_banana.svg",
+            "bunchSize": 4,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 15,
+            "name": "Super Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/super_banana.svg",
+            "bunchSize": 10,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 16,
+            "name": "Strawberry Banana",
+            "flavor": "Fruity",
+            "color": "Red",
+            "photo": "../../assets/strawberry_banana.svg",
+            "bunchSize": 1,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 17,
+            "name": "Space Banana",
+            "flavor": "Exotic",
+            "color": "Black",
+            "photo": "../../assets/space_banana.svg",
+            "bunchSize": 0,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 18,
+            "name": "Banana Phone",
+            "flavor": "Yucky",
+            "color": "Yellow",
+            "photo": "../../assets/banana_phone.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 19,
+            "name": "Flying Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/flying_banana.svg",
+            "bunchSize": 10,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 20,
+            "name": "Grape Banana",
+            "flavor": "Fruity",
+            "color": "Purple",
+            "photo": "../../assets/grape_banana.svg",
+            "bunchSize": 25,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 21,
+            "name": "Dirty Banana",
+            "flavor": "Yucky",
+            "color": " Brown",
+            "photo": "../../assets/dirty_banana.svg",
+            "bunchSize": 2,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 22,
+            "name": "Banana",
+            "flavor": "Normal",
+            "color": "Yellow",
+            "photo": "../../assets/banana-logo.svg",
+            "bunchSize": 5,
+            "edible": true,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 23,
+            "name": "Brown Banana",
+            "flavor": "Yucky",
+            "color": "Brown",
+            "photo": "../../assets/brown_banana.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 24,
+            "name": "Spicy Banana",
+            "flavor": "Spicy",
+            "color": "Red",
+            "photo": "../../assets/spicy_banana.svg",
+            "bunchSize": 3,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 25,
+            "name": "Jalapeno Banana",
+            "flavor": "Spicy",
+            "color": "Green",
+            "photo": "../../assets/jalapeno_banana.svg",
+            "bunchSize": 4,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 26,
+            "name": "Super Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/super_banana.svg",
+            "bunchSize": 10,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 27,
+            "name": "Strawberry Banana",
+            "flavor": "Fruity",
+            "color": "Red",
+            "photo": "../../assets/strawberry_banana.svg",
+            "bunchSize": 1,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 28,
+            "name": "Space Banana",
+            "flavor": "Exotic",
+            "color": "Black",
+            "photo": "../../assets/space_banana.svg",
+            "bunchSize": 0,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 29,
+            "name": "Banana Phone",
+            "flavor": "Yucky",
+            "color": "Yellow",
+            "photo": "../../assets/banana_phone.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 30,
+            "name": "Flying Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/flying_banana.svg",
+            "bunchSize": 10,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 31,
+            "name": "Grape Banana",
+            "flavor": "Fruity",
+            "color": "Purple",
+            "photo": "../../assets/grape_banana.svg",
+            "bunchSize": 25,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 32,
+            "name": "Dirty Banana",
+            "flavor": "Yucky",
+            "color": " Brown",
+            "photo": "../../assets/dirty_banana.svg",
+            "bunchSize": 2,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 33,
+            "name": "Banana",
+            "flavor": "Normal",
+            "color": "Yellow",
+            "photo": "../../assets/banana-logo.svg",
+            "bunchSize": 5,
+            "edible": true,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 34,
+            "name": "Brown Banana",
+            "flavor": "Yucky",
+            "color": "Brown",
+            "photo": "../../assets/brown_banana.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 35,
+            "name": "Spicy Banana",
+            "flavor": "Spicy",
+            "color": "Red",
+            "photo": "../../assets/spicy_banana.svg",
+            "bunchSize": 3,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 36,
+            "name": "Jalapeno Banana",
+            "flavor": "Spicy",
+            "color": "Green",
+            "photo": "../../assets/jalapeno_banana.svg",
+            "bunchSize": 4,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 37,
+            "name": "Super Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/super_banana.svg",
+            "bunchSize": 10,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 38,
+            "name": "Strawberry Banana",
+            "flavor": "Fruity",
+            "color": "Red",
+            "photo": "../../assets/strawberry_banana.svg",
+            "bunchSize": 1,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 39,
+            "name": "Space Banana",
+            "flavor": "Exotic",
+            "color": "Black",
+            "photo": "../../assets/space_banana.svg",
+            "bunchSize": 0,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 40,
+            "name": "Banana Phone",
+            "flavor": "Yucky",
+            "color": "Yellow",
+            "photo": "../../assets/banana_phone.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 41,
+            "name": "Flying Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/flying_banana.svg",
+            "bunchSize": 10,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 42,
+            "name": "Grape Banana",
+            "flavor": "Fruity",
+            "color": "Purple",
+            "photo": "../../assets/grape_banana.svg",
+            "bunchSize": 25,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 43,
+            "name": "Dirty Banana",
+            "flavor": "Yucky",
+            "color": " Brown",
+            "photo": "../../assets/dirty_banana.svg",
+            "bunchSize": 2,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 44,
+            "name": "Banana",
+            "flavor": "Normal",
+            "color": "Yellow",
+            "photo": "../../assets/banana-logo.svg",
+            "bunchSize": 5,
+            "edible": true,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 45,
+            "name": "Brown Banana",
+            "flavor": "Yucky",
+            "color": "Brown",
+            "photo": "../../assets/brown_banana.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 46,
+            "name": "Spicy Banana",
+            "flavor": "Spicy",
+            "color": "Red",
+            "photo": "../../assets/spicy_banana.svg",
+            "bunchSize": 3,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 47,
+            "name": "Jalapeno Banana",
+            "flavor": "Spicy",
+            "color": "Green",
+            "photo": "../../assets/jalapeno_banana.svg",
+            "bunchSize": 4,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 48,
+            "name": "Super Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/super_banana.svg",
+            "bunchSize": 10,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 49,
+            "name": "Strawberry Banana",
+            "flavor": "Fruity",
+            "color": "Red",
+            "photo": "../../assets/strawberry_banana.svg",
+            "bunchSize": 1,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 50,
+            "name": "Space Banana",
+            "flavor": "Exotic",
+            "color": "Black",
+            "photo": "../../assets/space_banana.svg",
+            "bunchSize": 0,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 51,
+            "name": "Banana Phone",
+            "flavor": "Yucky",
+            "color": "Yellow",
+            "photo": "../../assets/banana_phone.svg",
+            "bunchSize": 1,
+            "edible": false,
+            "geneticallyAltered": false
+        },
+        {
+            "id": 52,
+            "name": "Flying Banana",
+            "flavor": "Exotic",
+            "color": "Yellow",
+            "photo": "../../assets/flying_banana.svg",
+            "bunchSize": 10,
+            "edible": false,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 53,
+            "name": "Grape Banana",
+            "flavor": "Fruity",
+            "color": "Purple",
+            "photo": "../../assets/grape_banana.svg",
+            "bunchSize": 25,
+            "edible": true,
+            "geneticallyAltered": true
+        },
+        {
+            "id": 54,
+            "name": "Dirty Banana",
+            "flavor": "Yucky",
+            "color": " Brown",
+            "photo": "../../assets/dirty_banana.svg",
+            "bunchSize": 2,
+            "edible": false,
+            "geneticallyAltered": false
+        }
+    ]
 }
